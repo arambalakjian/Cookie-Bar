@@ -4,7 +4,7 @@
 			<div class="cookieContent">
 				<div class="description typography">
 					<% if CookieImage %>
-						$CookieImage.SetHeight(90)
+						$CookieImage.SetHeight(80)
 					<% end_if %>
 
 					$CookieBarContent
