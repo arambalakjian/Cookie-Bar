@@ -20,10 +20,12 @@ Unpack and copy the cookiebar folder into your SilverStripe project (You can cal
 
 Now add the include CookieBar.ss file at the top of your Page.ss template, just after <body> like so:
 
+<code>
 ...
 <body>
 <% include CookieBar %>
 ...
+</code>
 
 Run "dev/build" in your browser, for example: "http://www.mysite.com/dev/build?flush=all"
 
