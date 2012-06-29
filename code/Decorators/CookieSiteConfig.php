@@ -23,6 +23,11 @@ class CookieSiteConfig extends DataObjectDecorator
 			'has_one' => array(
 				'CookiePage' => 'Page',
 				'CookieImage' => 'Image'
+			),
+			'defaults' => array(
+				'CookieCloseText' => 'Accept',
+				'CookieMoreText' => 'Read more about Cookies',
+				'CookieBarContent' => '<p><strong>Like most websites we uses cookies</strong>. In order to deliver a personalised, responsive service and to improve the site, we remember and store information about how you use it. This is done using simple text files called cookies which sit on your computer. These cookies are completely safe and secure and will never contain any sensitive information. They are used only by us.</p>',
 			)
 		);
 	}
@@ -34,7 +39,7 @@ class CookieSiteConfig extends DataObjectDecorator
 		$fields->addFieldToTab('Root.CookieBar', new TreeDropdownField('CookiePageID', 'Cookie Information Page', 'SiteTree'));
 		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieCloseText', 'Accept/Close Link Text'));
 		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieMoreText', 'More Information Link Text'));
-		$fields->addFieldToTab('Root.CookieBar', new ImageField('CookieImage', 'Image', null, null, 'uploads/cookie-bar'));
+		$fields->addFieldToTab('Root.CookieBar', new ImageField('CookieImage', 'Image (optional)', null, null, null, 'uploads/cookie-bar'));
 		$fields->addFieldToTab('Root.CookieBar', new HTMLEditorField('CookieBarContent', 'Content'));
    	}
 }

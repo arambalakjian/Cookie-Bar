@@ -4,8 +4,9 @@
 			<div class="cookieContent">
 				<div class="description typography">
 					<% if CookieImage %>
-						$CookieImage.croppedImage(78, 78)
+						$CookieImage.SetHeight(78)
 					<% end_if %>
+
 					$CookieBarContent
 				</div>
 				<div class="links">
