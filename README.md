@@ -18,7 +18,12 @@ This module provides a configurable notice about cookies, a link to a page about
 
 Unpack and copy the cookiebar folder into your SilverStripe project (You can call the folder whatever you like).
 
-Now add the include at the top of your Page.ss template, just after <body>.
+Now add the include CookieBar.ss file at the top of your Page.ss template, just after <body> like so:
+
+...
+<body>
+<% include CookieBar %>
+...
 
 Run "dev/build" in your browser, for example: "http://www.mysite.com/dev/build?flush=all"
 
