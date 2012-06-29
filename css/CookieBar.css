@@ -13,10 +13,8 @@
 			width: 80%;
 		}
 			#cookieBar .cookieContent .description img {
-				width: 80px;
 				float: left;
 				margin-right: 15px;
-				border: 1px solid #CCCCCC;
 			}
 			#cookieBar .cookieContent .description p {
 				margin: 0;
