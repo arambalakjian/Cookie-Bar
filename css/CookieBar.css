@@ -2,11 +2,10 @@
 #cookieBar {
 	border-bottom: 2px solid #CCCCCC;
 	background-color: #EEEEEE;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 	#cookieBar .container {
 		position: relative;
+		padding: 20px;
 	}
 		#cookieBar .container .description {
 			width: 80%;
@@ -77,5 +76,6 @@
 			position: static;
 			color: #666666;
 			margin-top: 20px;
+			display: block;
 		}		
 }
