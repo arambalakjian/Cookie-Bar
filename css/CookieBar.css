@@ -1,31 +1,30 @@
+
 #cookieBar {
 	border-bottom: 2px solid #CCCCCC;
 	background-color: #EEEEEE;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
-	#cookieBar .cookieContent {
+	#cookieBar .container {
 		position: relative;
-		padding: 15px 0;
-		min-height: 50px;
-		width: 960px;
-		margin: 0 auto;
 	}
-		#cookieBar .cookieContent .description {
+		#cookieBar .container .description {
 			width: 80%;
 		}
-			#cookieBar .cookieContent .description img {
+			#cookieBar .container .description img {
 				float: left;
 				margin-right: 15px;
 			}
-			#cookieBar .cookieContent .description p {
+			#cookieBar .container .description p {
 				margin: 0;
 				color: #333333;
 			}
-		#cookieBar .cookieContent .links {
+		#cookieBar .container .links {
 			width: 17%;
 			text-align: right;
-		}
 
-			#cookieBar .cookieContent .links #acceptCookies{
+		}
+			#cookieBar .container .links #acceptCookies{
 				position: absolute;
 				right: 0;
 				top: 15px;
@@ -43,15 +42,40 @@
 				border-radius:5px;
 				cursor:pointer;
 			}
-				#cookieBar .cookieContent .links #acceptCookies:hover{
+				#cookieBar .container .links #acceptCookies:hover{
 					color:#FFFFFF;
 					text-decoration:none;
 					background-color:#666666;
 				}
-			#cookieBar .cookieContent .links .infoLink{
+			#cookieBar .container .links .infoLink{
 				position: absolute;
 				right: 0;
 				bottom: 15px;
 				color: #666666;
 			}
-
+			
+@media (max-width: 767px) {
+	
+	#cookieBar .container .description{
+		width: 100%;
+	}
+		#cookieBar .container .description img {
+			display: none;
+		}
+		#cookieBar .container .description p span {
+			display: none;
+		}
+	#cookieBar .container .links {
+		width: 100%;
+		text-align: left;
+	}	
+		#cookieBar .container .links #acceptCookies{
+			position: static;	
+			margin-top: 20px;
+		}
+		#cookieBar .container .links .infoLink{
+			position: static;
+			color: #666666;
+			margin-top: 20px;
+		}		
+}

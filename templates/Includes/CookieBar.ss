@@ -1,7 +1,7 @@
 <% if ShowCookieBar %>
 	<% control SiteConfig %>
 		<div id="cookieBar">
-			<div class="cookieContent">
+			<div class="container">
 				<div class="description typography">
 					<% if CookieImage %>
 						$CookieImage.SetHeight(80)
