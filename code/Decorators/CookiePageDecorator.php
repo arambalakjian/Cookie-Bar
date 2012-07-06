@@ -16,6 +16,24 @@ class CookiePageDecorator extends DataObjectDecorator
 			//add ajax to the accept button
 			Requirements::customScript("
 				jQuery(document).ready(function(){
+						
+					jQuery('#cookieBar a.more').click(function(e){
+						e.preventDefault();
+						
+						if(jQuery(this).hasClass('open'))
+						{
+							jQuery(this).html('Show more').removeClass('open');
+							jQuery('.content').slideUp();
+						}
+						else 
+						{
+							jQuery(this).html('Show less').addClass('open');
+							jQuery('.content').slideDown();
+						}
+
+						return false;
+					});
+					
 					jQuery('#acceptCookies').click(function(e){
 						e.preventDefault();
 

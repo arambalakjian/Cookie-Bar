@@ -6,8 +6,12 @@
 					<% if CookieImage %>
 						$CookieImage.SetHeight(80)
 					<% end_if %>
-
-					$CookieBarContent
+                    
+                    <p><strong>$CookieBarTitle</strong> <a href="#" class="more">Show more</a></p>
+                    
+					<div class="content">
+					   $CookieBarContent
+					</div>
 				</div>
 				<div class="links">
 					<a id="acceptCookies" href="$Top.AcceptCookiesLink">$CookieCloseText</a>

@@ -15,6 +15,7 @@ class CookieSiteConfig extends DataObjectDecorator
 	function extraStatics() {
 		return array(
 			'db' => array(
+				'CookieBarTitle' => 'Text',
 				'CookieBarContent' => 'HTMLText',
 				'CookieCloseText'  => 'Varchar(100)',
 				'CookieMoreText'   => 'Varchar(150)',
@@ -40,6 +41,7 @@ class CookieSiteConfig extends DataObjectDecorator
 		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieCloseText', 'Accept/Close Link Text'));
 		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieMoreText', 'More Information Link Text'));
 		$fields->addFieldToTab('Root.CookieBar', new ImageField('CookieImage', 'Image (optional)', null, null, null, 'uploads/cookie-bar'));
-		$fields->addFieldToTab('Root.CookieBar', new HTMLEditorField('CookieBarContent', 'Content'));
+		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieBarTitle', 'Cookie Bar Title'));
+		$fields->addFieldToTab('Root.CookieBar', new HTMLEditorField('CookieBarContent', 'Cookie bar Content (hidden on mobile)'));
    	}
 }
