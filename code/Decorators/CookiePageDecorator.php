@@ -35,19 +35,27 @@ class CookiePageDecorator extends DataObjectDecorator
 					});
 					
 					jQuery('#acceptCookies').click(function(e){
-						e.preventDefault();
 
-						jQuery.ajax({
+						var ua = navigator.userAgent;
+						//Check not BB (BB just uses standard non AJAX link)
+					    if (!(ua.indexOf('BlackBerry') >= 0))
+					    {
+					    	e.preventDefault();
+					    	
+							jQuery.ajax({
+								
+								url: '" . $this->getAcceptCookiesLink() . "',
+	            				success: function(data, textStatus)
+	            				{
+	            					if(data === 'success')
+	            					{
+										jQuery('#cookieBar').slideUp(500);
+	            					}
+								}
+							});							
+						}					
+						
 
-							url: '" . $this->getAcceptCookiesLink() . "',
-            				success: function(data, textStatus)
-            				{
-            					if(data === 'success')
-            					{ 
-            						jQuery('#cookieBar').slideUp(500);
-            					}
-							}
-						});
 					});
 				});
 			");

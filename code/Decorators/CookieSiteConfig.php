@@ -40,7 +40,7 @@ class CookieSiteConfig extends DataObjectDecorator
 		$fields->addFieldToTab('Root.CookieBar', new TreeDropdownField('CookiePageID', 'Cookie Information Page', 'SiteTree'));
 		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieCloseText', 'Accept/Close Link Text'));
 		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieMoreText', 'More Information Link Text'));
-		$fields->addFieldToTab('Root.CookieBar', new ImageField('CookieImage', 'Image (optional)', null, null, null, 'uploads/cookie-bar'));
+		$fields->addFieldToTab('Root.CookieBar', new ImageField('CookieImage', 'Image (optional)', null, null, null, 'Uploads/cookie-bar'));
 		$fields->addFieldToTab('Root.CookieBar', new TextField('CookieBarTitle', 'Cookie Bar Title'));
 		$fields->addFieldToTab('Root.CookieBar', new HTMLEditorField('CookieBarContent', 'Cookie bar Content (hidden on mobile)'));
    	}
