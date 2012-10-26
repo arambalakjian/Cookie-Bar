@@ -35,7 +35,7 @@ class CookieSiteConfig extends DataExtension
 		'CookieBarContent' => '<p><strong>Like most websites we uses cookies</strong>. In order to deliver a personalised, responsive service and to improve the site, we remember and store information about how you use it. This is done using simple text files called cookies which sit on your computer. These cookies are completely safe and secure and will never contain any sensitive information. They are used only by us.</p>',
 	);
 	
-	public function updateCMSFields(FieldSet &$fields) 
+	public function updateCMSFields(FieldList $fields)
 	{
 		$fields->addFieldToTab('Root.CookieBar', new CheckboxField('CookieBarEnable', 'Enable Cookie Bar'));
 
