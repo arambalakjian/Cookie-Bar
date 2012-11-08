@@ -15,7 +15,8 @@ This module provides a configurable notice about cookies, a link to a page about
 
 ## Requirements
 
- * SilverStripe 3 or newer
+ * Use Tag v1 for SilverStripe 2.4.1 or newer
+ * Use Tag v1.1 for SilverStripe 3 or newer
 
 ## Installation
 
