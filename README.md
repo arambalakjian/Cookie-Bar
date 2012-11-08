@@ -9,10 +9,13 @@ This module provides a configurable notice about cookies, a link to a page about
  * Aram Balakjian 
    <aram (at) aabweb (dot) com>
    www.aabweb.co.uk
+ * Steve Heyes
+   <steve.heyes (at) studiobonito (dot) co.uk>
+   www.studiobonito.co.uk
 
 ## Requirements
 
- * SilverStripe 2.4.1 or newer
+ * SilverStripe 3 or newer
 
 ## Installation
 
