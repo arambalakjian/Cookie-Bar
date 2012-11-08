@@ -1,5 +1,5 @@
 <% if ShowCookieBar %>
-	<% control SiteConfig %>
+	<% with SiteConfig %>
 		<div id="cookieBar">
 			<div class="container">
 				<div class="description typography">
@@ -22,6 +22,6 @@
 				<div class="clear"><!-- --></div>
 			</div>
 		</div>
-	<% end_control %>
+	<% end_with %>
 <% end_if %>
 
