@@ -1,6 +1,6 @@
 <?php
 
-class CookiePageDecorator extends DataObjectDecorator 
+class CookiePageExtension extends DataExtension 
 {
 	/**
 	 * Check whether the user has accepted the cookie complience message 
@@ -12,7 +12,7 @@ class CookiePageDecorator extends DataObjectDecorator
 		if(SiteConfig::current_site_config()->CookieBarEnable && (!Cookie::get('cookiesAccepted') || Cookie::get('cookiesAccepted') != 'true'))
 		{
 			//include the cookiebar css
-			Requirements::css(MOD_CB_DIR . '/css/CookieBar.css');
+			Requirements::themedCSS('CookieBar', 'cookiebar');
 			//add ajax to the accept button
 			Requirements::customScript("
 				jQuery(document).ready(function(){
