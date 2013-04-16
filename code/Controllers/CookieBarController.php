@@ -24,7 +24,7 @@ class CookieBarController extends Page_Controller
 		}
 		else 
 		{
-			return Director::redirectBack();
+			return $this->redirect();
 		}
 	}
 }
