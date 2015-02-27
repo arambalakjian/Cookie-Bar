@@ -30,5 +30,3 @@ Now add the include CookieBar.ss file at the top of your Page.ss template, just 
 
 
 Run "dev/build" in your browser, for example: "http://www.mysite.com/dev/build?flush=all"
-
-To see the module in action visit http://www.aabweb.co.uk
