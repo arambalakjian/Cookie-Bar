@@ -1,9 +1,9 @@
-<% if ShowCookieBar %>
-	<% with SiteConfig %>
+<% if $ShowCookieBar %>
+	<% with $SiteConfig %>
 		<div id="cookieBar">
 			<div class="container">
 				<div class="description typography">
-					<% if CookieImage %>
+					<% if $CookieImage %>
 						$CookieImage.SetHeight(80)
 					<% end_if %>
                     
@@ -15,7 +15,7 @@
 				</div>
 				<div class="links">
 					<a id="acceptCookies" href="$Top.AcceptCookiesLink">$CookieCloseText</a>
-					<% if CookiePage %>
+					<% if $CookiePage %>
 						<a href="$CookiePage.Link" class="infoLink">$CookieMoreText</a>
 					<% end_if %>
 				</div>

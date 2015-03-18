@@ -1,0 +1,10 @@
+---
+Name: cookiebar
+After: 'framework/*','cms/*'
+---
+SiteConfig:
+  extensions:
+    - 'CookieSiteConfig'
+Page_Controller:
+  extensions:
+    - 'CookiePageExtension'
