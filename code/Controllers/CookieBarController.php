@@ -4,7 +4,7 @@ class CookieBarController extends Page_Controller
 {
 	const URLSegment = "cookiebar";
 
-	static $allowed_actions = array(
+	private static $allowed_actions = array(
 		"accept"
 	);
 

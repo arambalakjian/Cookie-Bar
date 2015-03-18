@@ -1,6 +1,6 @@
 {
 	"name": "arambalakjian/Cookie-Bar",
-	"description": "Cookies notice for SilverStripe sites",
+	"description": "SilverStripe module for adding a 'Cookie notice' to comply with EU directive",
 	"type": "silverstripe-module",
 	"homepage": "https://github.com/arambalakjian/Cookie-Bar",
 	"keywords": ["silverstripe"],

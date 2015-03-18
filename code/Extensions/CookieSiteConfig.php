@@ -16,7 +16,7 @@
  */
 class CookieSiteConfig extends DataExtension 
 {
-	static $db = array(
+	private static $db = array(
 		'CookieBarTitle' => 'Varchar(255)',
 		'CookieBarContent' => 'HTMLText',
 		'CookieCloseText'  => 'Varchar(100)',
@@ -24,12 +24,12 @@ class CookieSiteConfig extends DataExtension
 		'CookieBarEnable' => 'Boolean'
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 		'CookiePage' => 'SiteTree',
 		'CookieImage' => 'Image'
 	);
 
-	static $defaults = array(
+	private static $defaults = array(
 		'CookieCloseText' => 'Accept',
 		'CookieMoreText' => 'Read more about Cookies',
 		'CookieBarContent' => '<p><strong>Like most websites we uses cookies</strong>. In order to deliver a personalised, responsive service and to improve the site, we remember and store information about how you use it. This is done using simple text files called cookies which sit on your computer. These cookies are completely safe and secure and will never contain any sensitive information. They are used only by us.</p>',
